@@ -8,9 +8,15 @@
   <div class="container">
     <div class="qrcode-wrapper">
       <div id="qrcode"></div>
-      <img id="favicon" class="favicon">
+      <img id="favicon" class="favicon" onerror="this.src='icons/icon48.png'">
     </div>
     <div class="site-name" id="siteName"></div>
+    <button id="downloadBtn" class="download-btn">
+      <svg class="download-icon" viewBox="0 0 24 24">
+        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+      </svg>
+      保存二维码
+    </button>
   </div>
   <script src="lib/qrcode.min.js"></script>
   <script src="popup.js"></script>
